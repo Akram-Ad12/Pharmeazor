@@ -4,3 +4,10 @@ pandas
 openpyxl
 pymupdf
 beautifulsoup4
+pymupdf
+pdfplumber
+pydantic
+pytest
+pytesseract
+pillow
+easyocr
