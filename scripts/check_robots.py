@@ -4,9 +4,6 @@ Usage (from the repo root):
     python scripts/check_robots.py                       # default sites
     python scripts/check_robots.py https://site/page     # exact pages you plan to download
 
-IMPORTANT: robots.txt is only half of the rule. You must ALSO read each site's terms of use
-and write both findings in reports/sources_terms.md. If a site forbids robots -> download
-manually or discard it. NEVER bypass.
 """
 import sys
 from urllib.parse import urlparse
@@ -14,16 +11,16 @@ from urllib.robotparser import RobotFileParser
 
 import requests
 
-# Add the exact URLs of the sources listed on the teacher's page (Pharm'Net, MEDAlgérie, ANPP RCP search...)
+# Add the exact URLs of the sources (Pharm'Net, MEDAlgérie, ANPP RCP search...)
 DEFAULT_URLS = [
-    "https://www.miph.gov.dz/",
-    "https://pharmnet-dz.com/",
-    "https://dzair-pharma.net/",
-    "https://dailymed.nlm.nih.gov/dailymed/",
-    "https://www.ema.europa.eu/en",
-    "https://ansm.sante.fr/",
-    "https://medal-dz.com/",
-    "https://anpp.dz/wpfd_file/regles-de-redaction-de-linformation-produit-rcp-notice-et-conditionnement-des-medicaments-destines-a-lusage-de-la-medecine-humaine/"
+    "https://www.miph.gov.dz/",  #SECOND PRIORITY: Nomenclature officielle (ministère de l'Industrie Pharmaceutique) 
+    "https://pharmnet-dz.com/",  #DICTIONARY SOURCE: Pharm'Net (e-Sahti)
+    "https://dzair-pharma.net/",  #UNOFFICIAL SOURCE: Dzair Pharma (e-Sahti)
+    "https://dailymed.nlm.nih.gov/dailymed/", #FOREIGN SOURCE: DailyMed (FDA)
+    "https://www.ema.europa.eu/en",  #FOREIGN SOURCE: EMA 
+    "https://ansm.sante.fr/",  #FOREIGN SOURCE: Thésaurus des interactions de l'ANSM
+    "https://medal-dz.com/",  #THIRD PRIORITY: MEDAlgérie
+    "https://anpp.dz/wpfd_file/regles-de-redaction-de-linformation-produit-rcp-notice-et-conditionnement-des-medicaments-destines-a-lusage-de-la-medecine-humaine/"  #FIRST PRIORITY: Thésaurus des interactions de l'ANSM
     #pass them on the command line:  python scripts/check_robots.py https://example.dz/page
 ]
 USER_AGENT = "PharmeazorStudentProject/0.1 (university course project)"
