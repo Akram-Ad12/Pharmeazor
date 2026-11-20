@@ -1,0 +1,110 @@
+[DOSAGE] [p.1] Ibuprofene Physiopharm comprime pellicule
+[DOSAGE] [p.1] COMPRIME PELLICULE
+[DOSAGE] [p.1] Base Supabase — nomenclature officielle
+[DOSAGE] [p.1] En ligne
+[DOSAGE] [p.1] GP
+[DOSAGE] [p.1] Grand public
+[DOSAGE] [p.1] 11/20/26, 7:27 PM
+[p.1] IBUPROFENE PHYSIOPHARM — Pharm'Net
+[DOSAGE] [p.1] https://pharmnet-dz.com/m-903-ibuprofene-physiopharm-200mg-comprime-pellicule-b-30
+[DOSAGE] [p.1] 1/3
+[DOSAGE] [p.2] Molécule (DCI)
+[p.2] IBUPROFENE
+[DOSAGE] [p.2] Classe pharmacologique
+[DOSAGE] [p.2] Anti-inflammatoires & Antirhumatismaux
+[DOSAGE] [p.2] Laboratoire
+[DOSAGE] [p.2] Physiopharm Laboratoires
+[DOSAGE] [p.2] Conditionnement
+[DOSAGE] [p.2] B/30
+[DOSAGE] [p.2] Code d'enregistrement
+[DOSAGE] [p.2] 462/04 B 040/23
+[DOSAGE] [p.2] Origine
+[DOSAGE] [p.2] Fabriqué en Algérie
+[DOSAGE] [p.2] Circuit de distribution
+[DOSAGE] [p.2] Hôpital · Officine
+[DOSAGE] [p.2] Statut
+[DOSAGE] [p.2] Enregistré
+[DOSAGE] [p.2] Non renseigné
+[DOSAGE] [p.2] Tarif de référence
+[DOSAGE] [p.2] Non remboursé
+[DOSAGE] [p.2] Équivalents thérapeutiques
+[DOSAGE] [p.2] 12 produits
+[DOSAGE] [p.2] Produits partageant le code DCI
+[DOSAGE] [p.2] B 040 . La barre verte signale un dosage et une
+[DOSAGE] [p.2] forme identiques. La substitution reste soumise à l'appréciation du pharmacien.
+[DOSAGE] [p.2] Adfen
+[DOSAGE] [p.2] Substituable
+[DOSAGE] [p.2] Laboratoires Mm · Algérie
+[DOSAGE] [p.2] 200MG
+[DOSAGE] [p.2] Local
+[DOSAGE] [p.2] Calmofen
+[DOSAGE] [p.2] Substituable
+[DOSAGE] [p.2] Inpha-Medis · Algérie
+[DOSAGE] [p.2] 200MG
+[DOSAGE] [p.2] Local
+[DOSAGE] [p.2] Hubifen
+[DOSAGE] [p.2] Substituable
+[DOSAGE] [p.2] Hupp Pharma · Algérie
+[DOSAGE] [p.2] 200MG
+[DOSAGE] [p.2] Local
+[DOSAGE] [p.2] Ibuprofal
+[DOSAGE] [p.2] Substituable
+[DOSAGE] [p.2] Societe Pharmaceutique Algerienne Sophal · Algérie
+[DOSAGE] [p.2] 200MG
+[DOSAGE] [p.2] Local
+[DOSAGE] [p.2] Ibuprofne Beker
+[DOSAGE] [p.2] Substituable
+[DOSAGE] [p.2] Laboratoires Beker · Algérie
+[DOSAGE] [p.2] 200MG
+[DOSAGE] [p.2] Local
+[DOSAGE] [p.2] Notice (PDF)
+[DOSAGE] [p.2] Non disponible
+[DOSAGE] [p.2] RCP (PDF)
+[DOSAGE] [p.2] Non disponible
+[DOSAGE] [p.2] 04
+[DOSAGE] [p.2] 11/20/26, 7:27 PM
+[p.2] IBUPROFENE PHYSIOPHARM — Pharm'Net
+[DOSAGE] [p.2] https://pharmnet-dz.com/m-903-ibuprofene-physiopharm-200mg-comprime-pellicule-b-30
+[DOSAGE] [p.2] 2/3
+[INTERACTIONS] [p.3] Pharm'Net, Le référentiel Algérien des médicaments — depuis 2015. Connecté à la base officielle (nomenclature juillet 2026). Les interactions
+[INTERACTIONS] [p.3] présentées relèvent d'un jeu de démonstration et ne se substituent pas au thésaurus de référence.
+[INTERACTIONS] [p.3] Neupren
+[INTERACTIONS] [p.3] Substituable
+[INTERACTIONS] [p.3] Biogalenic · Algérie
+[INTERACTIONS] [p.3] 200MG
+[INTERACTIONS] [p.3] Local
+[INTERACTIONS] [p.3] Sapomex
+[INTERACTIONS] [p.3] Substituable
+[INTERACTIONS] [p.3] Kpma Biotic · Algérie
+[INTERACTIONS] [p.3] 200MG
+[INTERACTIONS] [p.3] Local
+[INTERACTIONS] [p.3] Upfen
+[INTERACTIONS] [p.3] Substituable
+[INTERACTIONS] [p.3] Propharmal · Algérie
+[INTERACTIONS] [p.3] 200MG
+[INTERACTIONS] [p.3] Local
+[INTERACTIONS] [p.3] Xydol 200
+[INTERACTIONS] [p.3] Substituable
+[INTERACTIONS] [p.3] Laboratoires Merinal · Algérie
+[INTERACTIONS] [p.3] 200MG
+[INTERACTIONS] [p.3] Local
+[INTERACTIONS] [p.3] Butafen
+[INTERACTIONS] [p.3] Biocare · Algérie
+[INTERACTIONS] [p.3] 200MG
+[INTERACTIONS] [p.3] Local
+[INTERACTIONS] [p.3] Ibumal
+[INTERACTIONS] [p.3] Groupe Saidal · Algérie
+[INTERACTIONS] [p.3] 200MG
+[INTERACTIONS] [p.3] Local
+[INTERACTIONS] [p.3] Ubactive 200mg
+[INTERACTIONS] [p.3] Nadpharmadic-Production · Algérie
+[INTERACTIONS] [p.3] 200MG
+[INTERACTIONS] [p.3] Local
+[INTERACTIONS] [p.3] Interactions de Ibuprofene
+[INTERACTIONS] [p.3] Réservé aux professionnels de santé
+[INTERACTIONS] [p.3] Le détail des interactions est accessible aux médecins et pharmaciens
+[INTERACTIONS] [p.3] inscrits, après vérification du numéro d'inscription à l'Ordre.
+[INTERACTIONS] [p.3] 11/20/26, 7:27 PM
+[p.3] IBUPROFENE PHYSIOPHARM — Pharm'Net
+[DOSAGE] [p.3] https://pharmnet-dz.com/m-903-ibuprofene-physiopharm-200mg-comprime-pellicule-b-30
+[INTERACTIONS] [p.3] 3/3

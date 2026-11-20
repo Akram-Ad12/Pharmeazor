@@ -1,0 +1,108 @@
+[DOSAGE] [p.1] Ibuprofene Beker comprime pellicule 600MG
+[DOSAGE] [p.1] COMPRIME PELLICULE
+[DOSAGE] [p.1] Base Supabase — nomenclature officielle
+[DOSAGE] [p.1] En ligne
+[DOSAGE] [p.1] GP
+[DOSAGE] [p.1] Grand public
+[DOSAGE] [p.1] 11/20/26, 7:26 PM
+[p.1] IBUPROFENE BEKER — Pharm'Net
+[DOSAGE] [p.1] https://pharmnet-dz.com/m-925-ibuprofene-beker-600mg-comprime-pellicule-b-20
+[DOSAGE] [p.1] 1/3
+[DOSAGE] [p.2] Molécule (DCI)
+[p.2] IBUPROFENE
+[DOSAGE] [p.2] Classe pharmacologique
+[DOSAGE] [p.2] Anti-inflammatoires & Antirhumatismaux
+[DOSAGE] [p.2] Laboratoire
+[DOSAGE] [p.2] Laboratoires Beker
+[DOSAGE] [p.2] Conditionnement
+[DOSAGE] [p.2] B/20
+[DOSAGE] [p.2] Code d'enregistrement
+[DOSAGE] [p.2] 447/04 B 044/15/25
+[DOSAGE] [p.2] Origine
+[DOSAGE] [p.2] Fabriqué en Algérie
+[DOSAGE] [p.2] Circuit de distribution
+[DOSAGE] [p.2] Hôpital · Officine
+[DOSAGE] [p.2] Statut
+[DOSAGE] [p.2] Enregistré
+[DOSAGE] [p.2] Non renseigné
+[DOSAGE] [p.2] Tarif de référence
+[DOSAGE] [p.2] Non remboursé
+[DOSAGE] [p.2] Équivalents thérapeutiques
+[DOSAGE] [p.2] 11 produits
+[DOSAGE] [p.2] Produits partageant le code DCI
+[DOSAGE] [p.2] B 044 . La barre verte signale un dosage et une
+[DOSAGE] [p.2] forme identiques. La substitution reste soumise à l'appréciation du pharmacien.
+[DOSAGE] [p.2] Butafen
+[DOSAGE] [p.2] Substituable
+[DOSAGE] [p.2] Biocare · Algérie
+[DOSAGE] [p.2] 600MG
+[DOSAGE] [p.2] Local
+[DOSAGE] [p.2] Hubifen
+[DOSAGE] [p.2] Substituable
+[DOSAGE] [p.2] Hupp Pharma · Algérie
+[DOSAGE] [p.2] 600MG
+[DOSAGE] [p.2] Local
+[DOSAGE] [p.2] Ibuprane
+[DOSAGE] [p.2] Substituable
+[DOSAGE] [p.2] Sanofi Aventis Algerie · Algérie
+[DOSAGE] [p.2] 600MG
+[DOSAGE] [p.2] Local
+[DOSAGE] [p.2] Ibuprofal
+[DOSAGE] [p.2] Substituable
+[DOSAGE] [p.2] Societe Pharmaceutique Algerienne Sophal · Algérie
+[DOSAGE] [p.2] 600MG
+[DOSAGE] [p.2] Local
+[DOSAGE] [p.2] Narufene
+[DOSAGE] [p.2] Substituable
+[DOSAGE] [p.2] Pharmidal Ns · Algérie
+[DOSAGE] [p.2] 600MG
+[DOSAGE] [p.2] Local
+[DOSAGE] [p.2] Notice (PDF)
+[DOSAGE] [p.2] Non disponible
+[DOSAGE] [p.2] RCP (PDF)
+[DOSAGE] [p.2] Non disponible
+[DOSAGE] [p.2] 04
+[DOSAGE] [p.2] 11/20/26, 7:26 PM
+[p.2] IBUPROFENE BEKER — Pharm'Net
+[DOSAGE] [p.2] https://pharmnet-dz.com/m-925-ibuprofene-beker-600mg-comprime-pellicule-b-20
+[DOSAGE] [p.2] 2/3
+[INTERACTIONS] [p.3] Pharm'Net, Le référentiel Algérien des médicaments — depuis 2015. Connecté à la base officielle (nomenclature juillet 2026). Les interactions
+[INTERACTIONS] [p.3] présentées relèvent d'un jeu de démonstration et ne se substituent pas au thésaurus de référence.
+[INTERACTIONS] [p.3] Neofen
+[INTERACTIONS] [p.3] Substituable
+[INTERACTIONS] [p.3] Neomedic · Algérie
+[INTERACTIONS] [p.3] 600MG
+[INTERACTIONS] [p.3] Local
+[INTERACTIONS] [p.3] Neupren
+[INTERACTIONS] [p.3] Substituable
+[INTERACTIONS] [p.3] Biogalenic · Algérie
+[INTERACTIONS] [p.3] 600MG
+[INTERACTIONS] [p.3] Local
+[INTERACTIONS] [p.3] Sapofen 600
+[INTERACTIONS] [p.3] Substituable
+[INTERACTIONS] [p.3] Spimaco Addwaeih · Arabie Saoudite
+[INTERACTIONS] [p.3] 600MG
+[INTERACTIONS] [p.3] Local
+[INTERACTIONS] [p.3] Sapomex
+[INTERACTIONS] [p.3] Substituable
+[INTERACTIONS] [p.3] Kpma Biotic · Algérie
+[INTERACTIONS] [p.3] 600MG
+[INTERACTIONS] [p.3] Local
+[INTERACTIONS] [p.3] Ubactive 600mg
+[INTERACTIONS] [p.3] Substituable
+[INTERACTIONS] [p.3] Nadpharmadic-Production · Algérie
+[INTERACTIONS] [p.3] 600MG
+[INTERACTIONS] [p.3] Local
+[INTERACTIONS] [p.3] Xydol 600
+[INTERACTIONS] [p.3] Substituable
+[INTERACTIONS] [p.3] Laboratoires Merinal · Algérie
+[INTERACTIONS] [p.3] 600MG
+[INTERACTIONS] [p.3] Local
+[INTERACTIONS] [p.3] Interactions de Ibuprofene
+[INTERACTIONS] [p.3] Réservé aux professionnels de santé
+[INTERACTIONS] [p.3] Le détail des interactions est accessible aux médecins et pharmaciens
+[INTERACTIONS] [p.3] inscrits, après vérification du numéro d'inscription à l'Ordre.
+[INTERACTIONS] [p.3] 11/20/26, 7:26 PM
+[p.3] IBUPROFENE BEKER — Pharm'Net
+[DOSAGE] [p.3] https://pharmnet-dz.com/m-925-ibuprofene-beker-600mg-comprime-pellicule-b-20
+[INTERACTIONS] [p.3] 3/3

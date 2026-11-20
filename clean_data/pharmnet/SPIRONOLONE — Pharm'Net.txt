@@ -1,0 +1,42 @@
+[p.2] SPIRONOLACTONE MICRONISEE
+[DOSAGE] [p.2] Classe pharmacologique
+[DOSAGE] [p.2] Système cardiovasculaire
+[DOSAGE] [p.2] Laboratoire
+[DOSAGE] [p.2] Biogalenic
+[DOSAGE] [p.2] Conditionnement
+[DOSAGE] [p.2] B/30
+[DOSAGE] [p.2] Code d'enregistrement
+[DOSAGE] [p.2] 235/06 H 095/09/22
+[DOSAGE] [p.2] Origine
+[DOSAGE] [p.2] Fabriqué en Algérie
+[DOSAGE] [p.2] Circuit de distribution
+[DOSAGE] [p.2] Hôpital · Officine
+[DOSAGE] [p.2] Statut
+[DOSAGE] [p.2] Enregistré
+[DOSAGE] [p.2] Non renseigné
+[DOSAGE] [p.2] Tarif de référence
+[DOSAGE] [p.2] Non remboursé
+[DOSAGE] [p.2] Équivalents thérapeutiques
+[DOSAGE] [p.2] 1 produit
+[DOSAGE] [p.2] Produits partageant le code DCI
+[DOSAGE] [p.2] H 095 . La barre verte signale un dosage et une
+[DOSAGE] [p.2] forme identiques. La substitution reste soumise à l'appréciation du pharmacien.
+[DOSAGE] [p.2] Aldactone
+[DOSAGE] [p.2] Substituable
+[DOSAGE] [p.2] Pfizer Holding France · France
+[DOSAGE] [p.2] 75MG
+[INTERACTIONS] [p.2] Interactions de Spironolactone Micronisee
+[DOSAGE] [p.2] Réservé aux professionnels de santé
+[INTERACTIONS] [p.2] Le détail des interactions est accessible aux médecins et pharmaciens
+[INTERACTIONS] [p.2] inscrits, après vérification du numéro d'inscription à l'Ordre.
+[INTERACTIONS] [p.2] 06
+[INTERACTIONS] [p.2] 11/20/26, 7:44 PM
+[INTERACTIONS] [p.2] SPIRONOLONE — Pharm'Net
+[DOSAGE] [p.2] https://pharmnet-dz.com/m-1482-spironolone-75mg-comprime-pellicule-secable-b-30
+[DOSAGE] [p.2] 2/3
+[INTERACTIONS] [p.3] Pharm'Net, Le référentiel Algérien des médicaments — depuis 2015. Connecté à la base officielle (nomenclature juillet 2026). Les interactions
+[INTERACTIONS] [p.3] présentées relèvent d'un jeu de démonstration et ne se substituent pas au thésaurus de référence.
+[INTERACTIONS] [p.3] 11/20/26, 7:44 PM
+[INTERACTIONS] [p.3] SPIRONOLONE — Pharm'Net
+[DOSAGE] [p.3] https://pharmnet-dz.com/m-1482-spironolone-75mg-comprime-pellicule-secable-b-30
+[DOSAGE] [p.3] 3/3
