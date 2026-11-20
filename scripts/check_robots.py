@@ -14,13 +14,13 @@ import requests
 # Add the exact URLs of the sources (Pharm'Net, MEDAlgérie, ANPP RCP search...)
 DEFAULT_URLS = [
     "https://www.miph.gov.dz/",  #SECOND PRIORITY: Nomenclature officielle (ministère de l'Industrie Pharmaceutique) 
-    "https://pharmnet-dz.com/",  #DICTIONARY SOURCE: Pharm'Net (e-Sahti)
-    "https://dzair-pharma.net/",  #UNOFFICIAL SOURCE: Dzair Pharma (e-Sahti)
-    "https://dailymed.nlm.nih.gov/dailymed/", #FOREIGN SOURCE: DailyMed (FDA)
-    "https://www.ema.europa.eu/en",  #FOREIGN SOURCE: EMA 
-    "https://ansm.sante.fr/",  #FOREIGN SOURCE: Thésaurus des interactions de l'ANSM
-    "https://medal-dz.com/",  #THIRD PRIORITY: MEDAlgérie
-    "https://anpp.dz/wpfd_file/regles-de-redaction-de-linformation-produit-rcp-notice-et-conditionnement-des-medicaments-destines-a-lusage-de-la-medecine-humaine/"  #FIRST PRIORITY: Thésaurus des interactions de l'ANSM
+    "https://pharmnet-dz.com/",  #FOURTH PRIORITY UNOFFICIAL: Pharm'Net (e-Sahti)
+    "https://dzair-pharma.net/",  #FOURTH PRIORITY UNOFFICIAL: Dzair Pharma (e-Sahti)
+    "https://dailymed.nlm.nih.gov/dailymed/", #THIRD PRIORITY FOREIGN: DailyMed (FDA)
+    "https://www.ema.europa.eu/en",  #THIRD PRIORITY FOREIGN: EMA 
+    "https://ansm.sante.fr/",  #THIRD PRIORITY FOREIGN: Thésaurus des interactions de l'ANSM
+    "https://medal-dz.com/",  #FOURTH PRIORITY UNOFFICIAL: MEDAlgérie
+    "https://anpp.dz/wpfd_file/regles-de-redaction-de-linformation-produit-rcp-notice-et-conditionnement-des-medicaments-destines-a-lusage-de-la-medecine-humaine/"  #FIRST PRIORITY: Thésaurus des interactions de l'ANPP
     #pass them on the command line:  python scripts/check_robots.py https://example.dz/page
 ]
 USER_AGENT = "PharmeazorStudentProject/0.1 (university course project)"
