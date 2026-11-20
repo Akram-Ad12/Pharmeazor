@@ -1,4 +1,4 @@
-import re, sys, unicodedata
+import os, re, sys, unicodedata
 import pandas as pd
 
 SRC = sys.argv[1] if len(sys.argv) > 1 else "data/raw/clean_NOMENCLATURE.VERSION.AOUT_.2026-.xlsx"
@@ -60,7 +60,12 @@ df[["dosage_value", "dosage_unit"]] = df["DOSAGE"].apply(lambda s: pd.Series(par
 # 7. flag duplicates inside each sheet, do not delete
 df["dup_flag"] = df.duplicated(["source_sheet", "N°ENREGISTREMENT"], keep=False)
 
-df.to_csv("nomenclature_clean.csv", index=False, encoding="utf-8-sig")
+# Output folder for all cleaned files (created if it does not exist yet)
+OUT_DIR = "clean_data"
+os.makedirs(OUT_DIR, exist_ok=True)
+OUT_CSV = os.path.join(OUT_DIR, "nomenclature_clean.csv")
+df.to_csv(OUT_CSV, index=False, encoding="utf-8-sig")
+print("Saved:", OUT_CSV)
 print(df.groupby("source_sheet").size().to_dict(), "| dup rows flagged:", int(df.dup_flag.sum()))
 print("dosage parsed:", int(df.dosage_value.notna().sum()), "of", len(df))
 
