@@ -1,0 +1,16 @@
+[
+  {
+    "document_id": "20230915-thesaurus-interactions-medicamenteuses-septembre-2023_836c603c80",
+    "source_file": "20230915-thesaurus-interactions-medicamenteuses-septembre-2023.pdf",
+    "sha256": "836c603c809720a2e322159791d203e6c89390f730a5b3112e2be4f819632e78",
+    "collected_at": "2026-11-20T18:36:08.701072+00:00",
+    "page_count": 263,
+    "methods": [
+      "pymupdf"
+    ],
+    "sections_found": [
+      "contre_indications",
+      "interactions"
+    ]
+  }
+]
