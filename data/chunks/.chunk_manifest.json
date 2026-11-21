@@ -1,0 +1,15 @@
+{
+  "inputs": {
+    "clean_data/ansm/20230915-thesaurus-interactions-medicamenteuses-septembre-2023_pdf.txt": "0b398be5f2fcc7339ab64663c21e33c9840c58d87b8209e51978d06bf1c7071d",
+    "clean_data/medalgerie/amoxicilline_html.txt": "0b5f2ed50231d5cdc28bf04592c84a41ea2441ba9749014644e76b0740b5fda9",
+    "clean_data/medalgerie/medal_data_raw_json.txt": "a4611bbb226b407f32449e0b705ec75f58d1a25d1edb0aab22d8d67e05906819",
+    "clean_data/medalgerie/medal_data_raw_xls.txt": "eb91a80c50693ac17150c0a6757897589741749c11da98402a2a65542195ea82",
+    "clean_data/miph/nomenclature_40_drugs_clean.csv": "4f7cc2bab34deea5026e8b005ea2d297857cbac0bcd368803a2aff7f01227c5c",
+    "clean_data/pharmnet/IBUPROFENE BEKER \u2014 Pharm'Net_pdf.txt": "d857766fa031bea24cbd3898f403a8faba8946d89b831fb18382d0cee0a7462f",
+    "clean_data/pharmnet/IBUPROFENE PHYSIOPHARM \u2014 Pharm'Net_pdf.txt": "94e3dc42145f836a0cec16b9e7355d96688ce64674e3eb19ba307525bf5d51a2",
+    "clean_data/pharmnet/RAMIPRIL BEKER \u2014 Pharm'Net_pdf.txt": "fce7ce743b317e9eaa057d23f0121c5a33286882436c9fce9f23fb1bf2d9aa7d",
+    "clean_data/pharmnet/RAMIPRIL PHYSIOPHARM \u2014 Pharm'Net_pdf.txt": "829ec17a79416075397c125b30c189a2ddf4c3a1c067f79a33e6796b54a467ee",
+    "clean_data/pharmnet/SPIRONOLONE \u2014 Pharm'Net_pdf.txt": "a842bae0a31fb18314248faf79a6639acd9103cb9fa296ebd39cc2f125834f5a"
+  },
+  "out_sha256": "56d486e50c5672e4c97e99aaa001eb5fe01e2526eb9f7cd78af6fc365c4a3679"
+}

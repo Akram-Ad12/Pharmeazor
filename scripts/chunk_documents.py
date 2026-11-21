@@ -16,6 +16,7 @@ THE KEY DESIGN IDEA: every chunk has two texts
   search_text  = text + helpful context (class name, class members, level names...)
                  used ONLY to find the chunk. It never gets shown as a quote.
 """
+import hashlib
 import json
 import re
 import unicodedata
@@ -26,6 +27,7 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[1]
 CLEAN_DIR = ROOT / "clean_data"
 OUT_FILE = ROOT / "data" / "chunks" / "chunks.jsonl"
+MANIFEST_FILE = ROOT / "data" / "chunks" / ".chunk_manifest.json"
 SKIP_DIRS = {"venv", ".venv", ".git", "node_modules", "__pycache__"}
 
 MAX_CHARS = 1500          # a chunk longer than this is split (embedding models read ~500 tokens)
@@ -35,6 +37,7 @@ AUTHORITY = {
     "ANSM Thesaurus": 3,
     "Nomenclature officielle (MIPH)": 2,
     "Pharm'Net": 4,
+    "Med'Algerie": 4,
 }
 
 # The 4 official interaction levels (ANSM) and their abbreviations used in the thesaurus
@@ -94,6 +97,71 @@ def split_long(text: str, max_chars: int = MAX_CHARS) -> list[str]:
 def find_files(pattern: str) -> list[Path]:
     return sorted(p for p in ROOT.rglob(pattern)
                   if not (set(p.relative_to(ROOT).parts) & SKIP_DIRS))
+
+
+def sha256_file(path: Path) -> str:
+    h = hashlib.sha256()
+    with path.open("rb") as f:
+        for block in iter(lambda: f.read(65536), b""):
+            h.update(block)
+    return h.hexdigest()
+
+
+def collect_input_files() -> list[Path]:
+    inputs: list[Path] = []
+    for csv_path in find_files("nomenclature_40_drugs_clean.csv"):
+        inputs.append(csv_path)
+        break
+    for txt in find_files("*.txt"):
+        if CLEAN_DIR in txt.parents:
+            inputs.append(txt)
+    return inputs
+
+
+def compute_inputs_signature(inputs: list[Path]) -> dict[str, str]:
+    sig: dict[str, str] = {}
+    for p in inputs:
+        sig[p.relative_to(ROOT).as_posix()] = sha256_file(p)
+    return sig
+
+
+def should_skip_chunking(inputs: list[Path]) -> bool:
+    if not OUT_FILE.exists() or not MANIFEST_FILE.exists():
+        return False
+    try:
+        manifest = json.loads(MANIFEST_FILE.read_text(encoding="utf-8"))
+    except Exception:
+        return False
+    current_sig = compute_inputs_signature(inputs)
+    if manifest.get("inputs") != current_sig:
+        return False
+    if manifest.get("out_sha256") != sha256_file(OUT_FILE):
+        return False
+    return True
+
+
+def save_chunk_manifest(inputs: list[Path]) -> None:
+    MANIFEST_FILE.parent.mkdir(parents=True, exist_ok=True)
+    payload = {
+        "inputs": compute_inputs_signature(inputs),
+        "out_sha256": sha256_file(OUT_FILE) if OUT_FILE.exists() else None,
+    }
+    MANIFEST_FILE.write_text(json.dumps(payload, indent=2, sort_keys=True), encoding="utf-8")
+
+
+def print_report(all_chunks: list[dict]) -> None:
+    print(f"\nWrote {len(all_chunks)} chunks -> {OUT_FILE.relative_to(ROOT)}\n")
+    by = {}
+    for c in all_chunks:
+        by.setdefault((c["source"], c["chunk_type"]), []).append(len(c["text"]))
+    print(f"{'source':38} {'type':17} {'count':>6} {'avg chars':>10} {'max':>6}")
+    for (s, t), lens in sorted(by.items()):
+        print(f"{s[:37]:38} {t:17} {len(lens):6d} {sum(lens)//len(lens):10d} {max(lens):6d}")
+    orphans = sum(1 for c in all_chunks if c["metadata"].get("orphan_header"))
+    print(f"\nInteraction chunks with a missing header (orphans): {orphans}")
+    unknown = {c['source_file'] for c in all_chunks if c["authority_level"] is None}
+    if unknown:
+        print("Files with UNKNOWN source/authority (tell me where they came from):", sorted(unknown))
 
 
 # ------------------------------------------------------------ 1. ANSM thesaurus
@@ -321,7 +389,7 @@ NOISE = [
 
 
 def chunk_generic(path: Path) -> list[dict]:
-    """For small text files (Pharm'Net product pages, brand lists...): remove print noise and
+    """For small text files (Pharm'Net product pages, Med'Algerie pages, brand lists...): remove print noise and
     the meaningless [DOSAGE]/[p.N] tags, then cut in windows of <= MAX_CHARS with 150 chars overlap.
     (Overlap = the end of one chunk is repeated at the start of the next, so a sentence cut
     in two can still be found.)"""
@@ -337,8 +405,18 @@ def chunk_generic(path: Path) -> list[dict]:
             continue
         lines.append(text)
 
-    is_pharmnet = "pharm_net" in norm(path.name) or "pharm'net" in norm(path.name)
-    source = "Pharm'Net" if is_pharmnet else f"A identifier ({path.name})"
+    rel_parts_norm = {norm(part) for part in path.relative_to(ROOT).parts}
+    name_norm = norm(path.name)
+    is_pharmnet = "pharm_net" in name_norm or "pharm'net" in name_norm or "pharmnet" in rel_parts_norm
+    is_medalgerie = "medalgerie" in rel_parts_norm or "medalgerie" in name_norm or "med'algerie" in name_norm
+
+    if is_pharmnet:
+        source = "Pharm'Net"
+    elif is_medalgerie:
+        source = "Med'Algerie"
+    else:
+        source = f"A identifier ({path.name})"
+
     authority = AUTHORITY.get(source)                 # None = unknown, to be filled by the team
     title = lines[0] if lines else path.stem
     body = join_lines([ln if not re.fullmatch(r"[A-Za-zÀ-ÿ' ()\-]+", ln) or len(ln) > 40 else ln + " ;" for ln in lines])
@@ -365,6 +443,12 @@ def chunk_generic(path: Path) -> list[dict]:
 
 # --------------------------------------------------------------------- main
 def main():
+    inputs = collect_input_files()
+    if should_skip_chunking(inputs):
+        existing = [json.loads(ln) for ln in OUT_FILE.read_text(encoding="utf-8").splitlines() if ln.strip()]
+        print(f"\n[SKIPPED] Chunks already up to date -> {OUT_FILE.relative_to(ROOT)} ({len(existing)} chunks)\n")
+        return
+
     all_chunks = []
     for csv_path in find_files("nomenclature_40_drugs_clean.csv"):
         all_chunks += chunk_nomenclature(csv_path)
@@ -382,19 +466,8 @@ def main():
         for c in all_chunks:
             f.write(json.dumps(c, ensure_ascii=False) + "\n")
 
-    # ---- report
-    print(f"\nWrote {len(all_chunks)} chunks -> {OUT_FILE.relative_to(ROOT)}\n")
-    by = {}
-    for c in all_chunks:
-        by.setdefault((c["source"], c["chunk_type"]), []).append(len(c["text"]))
-    print(f"{'source':38} {'type':17} {'count':>6} {'avg chars':>10} {'max':>6}")
-    for (s, t), lens in sorted(by.items()):
-        print(f"{s[:37]:38} {t:17} {len(lens):6d} {sum(lens)//len(lens):10d} {max(lens):6d}")
-    orphans = sum(1 for c in all_chunks if c["metadata"].get("orphan_header"))
-    print(f"\nInteraction chunks with a missing header (orphans): {orphans}")
-    unknown = {c['source_file'] for c in all_chunks if c["authority_level"] is None}
-    if unknown:
-        print("Files with UNKNOWN source/authority (tell me where they came from):", sorted(unknown))
+    save_chunk_manifest(inputs)
+    print_report(all_chunks)
 
 
 if __name__ == "__main__":

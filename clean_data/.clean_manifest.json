@@ -1,0 +1,72 @@
+{
+  "data/raw/ansm/20230915-thesaurus-interactions-medicamenteuses-septembre-2023.pdf": {
+    "dst_file": "clean_data/ansm/20230915-thesaurus-interactions-medicamenteuses-septembre-2023_pdf.txt",
+    "dst_sha256": "0b398be5f2fcc7339ab64663c21e33c9840c58d87b8209e51978d06bf1c7071d",
+    "src_mtime_ns": 1794642949466403700,
+    "src_sha256": "836c603c809720a2e322159791d203e6c89390f730a5b3112e2be4f819632e78",
+    "src_size": 2797093
+  },
+  "data/raw/medalgerie/amoxicilline.html": {
+    "dst_file": "clean_data/medalgerie/amoxicilline_html.txt",
+    "dst_sha256": "0b5f2ed50231d5cdc28bf04592c84a41ea2441ba9749014644e76b0740b5fda9",
+    "src_mtime_ns": 1795209760690113300,
+    "src_sha256": "d6962d6da1f4cc974b29dd3d2cc9a1be5cfcb35ead1778217b92d37c05ef9026",
+    "src_size": 232081
+  },
+  "data/raw/medalgerie/medal_data_raw.json": {
+    "dst_file": "clean_data/medalgerie/medal_data_raw_json.txt",
+    "dst_sha256": "a4611bbb226b407f32449e0b705ec75f58d1a25d1edb0aab22d8d67e05906819",
+    "src_mtime_ns": 1795209760699720800,
+    "src_sha256": "c19c3edfd409eac60c45fe2e56b153f892d8e3faaff480ac72e0bc170f0f6dd6",
+    "src_size": 31540
+  },
+  "data/raw/medalgerie/medal_data_raw.xls": {
+    "dst_file": "clean_data/medalgerie/medal_data_raw_xls.txt",
+    "dst_sha256": "eb91a80c50693ac17150c0a6757897589741749c11da98402a2a65542195ea82",
+    "src_mtime_ns": 1795246381602115700,
+    "src_sha256": "45b01537ca4a132dda7d459fb5d5a089f7d17ea01bde6dab48a2857cb876031c",
+    "src_size": 28672
+  },
+  "data/raw/miph/clean_NOMENCLATURE.VERSION.AOUT_.2026-.xlsx": {
+    "dst_file": "clean_data/miph/clean_NOMENCLATURE.VERSION.AOUT_.2026-_xlsx.txt",
+    "dst_sha256": "375e77b4063fc74a2512f9eb1b227ab4cd6050a45b559a039ae4d8b3d328189c",
+    "src_mtime_ns": 1794644129001590600,
+    "src_sha256": "950617aaf9fc1417be4fd9624a7f880c6aa753d91cbfa8d903a9646969c65dee",
+    "src_size": 1252820
+  },
+  "data/raw/pharmnet/IBUPROFENE BEKER — Pharm'Net.pdf": {
+    "dst_file": "clean_data/pharmnet/IBUPROFENE BEKER — Pharm'Net_pdf.txt",
+    "dst_sha256": "d857766fa031bea24cbd3898f403a8faba8946d89b831fb18382d0cee0a7462f",
+    "src_mtime_ns": 1795199203526361400,
+    "src_sha256": "e7f9bd685677f41db42ff5f6cde27d919eae065b4f815d6da00e3d07c1189f5a",
+    "src_size": 932390
+  },
+  "data/raw/pharmnet/IBUPROFENE PHYSIOPHARM — Pharm'Net.pdf": {
+    "dst_file": "clean_data/pharmnet/IBUPROFENE PHYSIOPHARM — Pharm'Net_pdf.txt",
+    "dst_sha256": "94e3dc42145f836a0cec16b9e7355d96688ce64674e3eb19ba307525bf5d51a2",
+    "src_mtime_ns": 1795199250615380100,
+    "src_sha256": "81be6149af21dd7fed9ee27fc0087b017c48cc5fbde288caea39abc0379d44ee",
+    "src_size": 662679
+  },
+  "data/raw/pharmnet/RAMIPRIL BEKER — Pharm'Net.pdf": {
+    "dst_file": "clean_data/pharmnet/RAMIPRIL BEKER — Pharm'Net_pdf.txt",
+    "dst_sha256": "fce7ce743b317e9eaa057d23f0121c5a33286882436c9fce9f23fb1bf2d9aa7d",
+    "src_mtime_ns": 1795200237623779100,
+    "src_sha256": "13f8c47a84d355334c94a147e65197a44e20ce2ead531e2fc61ce0b9e7e10c6e",
+    "src_size": 629319
+  },
+  "data/raw/pharmnet/RAMIPRIL PHYSIOPHARM — Pharm'Net.pdf": {
+    "dst_file": "clean_data/pharmnet/RAMIPRIL PHYSIOPHARM — Pharm'Net_pdf.txt",
+    "dst_sha256": "829ec17a79416075397c125b30c189a2ddf4c3a1c067f79a33e6796b54a467ee",
+    "src_mtime_ns": 1795200253105576000,
+    "src_sha256": "e44f3ccc8f3da597ce059fb64c1b5ae9724ec09fec78e6029afe5983f74b2005",
+    "src_size": 639008
+  },
+  "data/raw/pharmnet/SPIRONOLONE — Pharm'Net.pdf": {
+    "dst_file": "clean_data/pharmnet/SPIRONOLONE — Pharm'Net_pdf.txt",
+    "dst_sha256": "a842bae0a31fb18314248faf79a6639acd9103cb9fa296ebd39cc2f125834f5a",
+    "src_mtime_ns": 1795200306385556400,
+    "src_sha256": "cb510fc997f0eaf743957ad93b565015c74feb25b3870e04004050bb25e543d0",
+    "src_size": 887724
+  }
+}
